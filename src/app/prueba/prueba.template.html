@@ -1,0 +1,15 @@
+<div class="techs-container">
+  <center>
+    <h2 class="techs-h2">
+      Prueba:
+    </h2>
+    <h1> Soy el Componente Hijo </h1>
+    <h2>Atributo: {{$ctrl.atrString}}</h2>
+    <pre ng-repeat="tech in $ctrl.arrayTecnologias | filter: $ctrl.atributoHijo">
+      {{ tech | json}}
+    </pre>
+  </center>
+  <div class="techs">
+    <ghr-prueba></ghr-prueba>
+  </div>
+</div>

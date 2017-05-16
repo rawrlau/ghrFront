@@ -110,3 +110,22 @@ a {
   font-size: 1.5rem;
   margin: 0 0 2rem 0;
 }
+componente-padre {
+  background-color: #CFC;
+}
+componente-hijo {
+  background-color: #b1d5e6;
+   display: block;
+}
+
+.css-form input{
+  margin-top: 0.2rem;
+}
+
+.css-form input.ng-invalid.ng-touched {
+    background-color: #FA787E;
+  }
+
+  .css-form input.ng-valid.ng-touched {
+    background-color: #78FA89;
+  }

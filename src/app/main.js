@@ -1,5 +1,5 @@
 angular
   .module('app')
-  .component('app', {
+  .component('ghrApp', {
     templateUrl: 'app/main.html'
   });

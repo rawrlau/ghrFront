@@ -1,0 +1,11 @@
+<div class="techs-container">
+  <h2 class="techs-h2">
+    Lista de candidatos
+  </h2>
+  <div class="techs">
+    <pre ng-show = $ctrl.debug>
+      {{$ctrl.candidatos | json}}
+    </pre>
+    <ghr-candidato  ng-repeat="candidato in $ctrl.candidatos" datos ="candidato"></ghr-candidato>
+  </div>
+</div>
