@@ -18,6 +18,7 @@ exports.ngModule = 'app';
  */
 exports.paths = {
   src: 'src',
+  // components: 'bower_components/component*/*.js',
   dist: 'dist',
   tmp: '.tmp',
   e2e: 'e2e',
