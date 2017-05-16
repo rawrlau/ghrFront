@@ -5,7 +5,10 @@
     "angular": "^1.6.2",
     "angular-ui-router": "1.0.0-beta.3",
     "component-footer": "https://github.com/SofttekFormacion2017/component-footer.git#1.0.0",
-    "bootstrap": "3"
+    "bootstrap": "3",
+    "component-candidatos": "https://github.com/SofttekFormacion2017/component-candidatos.git",
+    "component-solicitudes": "https://github.com/SofttekFormacion2017/component-solicitudes.git",
+    "component-varios": "https://github.com/SofttekFormacion2017/component-varios.git"
   },
   "devDependencies": {
     "angular-mocks": "^1.6.2"
