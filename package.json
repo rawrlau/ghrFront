@@ -1,13 +1,13 @@
-"scripts": {
-  "build": "gulp",
-  "clean": "gulp clean",
-  "serve": "gulp clean && gulp serve",
-  "serve:dist": "gulp serve:dist",
-  "test": "gulp test",
-  "test:auto": "gulp test:auto",
-  "bower": "bower"
-},
 {
+  "scripts": {
+    "build": "gulp",
+    "clean": "gulp clean",
+    "serve": "gulp clean && gulp serve",
+    "serve:dist": "gulp serve:dist",
+    "test": "gulp test",
+    "test:auto": "gulp test:auto",
+    "bower": "bower"
+  },
   "devDependencies": {
     "@types/angular": "^1.6.6",
     "@types/angular-mocks": "^1.5.9",
