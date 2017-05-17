@@ -5,7 +5,6 @@ angular
 function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $locationProvider.html5Mode(true).hashPrefix('!');
   $urlRouterProvider.otherwise('/');
-
   $stateProvider
     .state('app', {
       url: '/',
@@ -13,7 +12,7 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     })
     .state('app.candidatos', {
       url: 'candidatos',
-      template: '<ghr-candidatos>Loading..</ghr-candidatos>',
+      template: '<ghr-candidatos-list>Loading..</ghr-candidatos-list>',
       controller: function ($log) {
         $log.log('');
       }

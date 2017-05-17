@@ -111,7 +111,31 @@ a {
   margin: 0 0 2rem 0;
 }
 // Candidatos
+ghr-candidatos-list {
+    .container {
+        border: 2px solid #aaa;
+    }
+    .row {
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-left-width: 1px;
+        border-bottom-width: 0;
+        border-style: solid;
+        border-color: #aaa;
+        padding: .4em;
+        &:nth-child(odd){
+            background-color: #eeE;
+        }
+        div {
 
+        }
+    }
+    .cabecera {
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom-width: 2px;
+    }
+}
 //Solicitudes
 
 //Varios
