@@ -110,6 +110,38 @@ a {
   font-size: 1.5rem;
   margin: 0 0 2rem 0;
 }
+//General
+$toolbar-active: #1bdd67;
+header .header-title {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        a {
+            color: #ddd;
+            display: block;
+            padding: 1em;
+            font-size: 1.2em;
+            font-family: 'courier';
+            text-decoration: none;
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            transition: all .2s;
+            &:hover {
+                color: lighten($toolbar-active, 20);
+                border-bottom-color: lighten($toolbar-active, 20);
+            }
+            &.toolbar-active {
+                color: $toolbar-active;
+                border-bottom-color: $toolbar-active;
+            }
+        }
+    }
+}
 // Candidatos
 ghr-candidatos-list {
     .wrap {
@@ -151,6 +183,16 @@ ghr-candidatos-list {
                 font-weight: bold;
                 text-transform: uppercase;
                 border-bottom-width: 2px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    cursor: pointer;
+                }
+                .accion {
+                    cursor: auto;
+                }
             }
         }
         .pagination {
