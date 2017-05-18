@@ -112,28 +112,55 @@ a {
 }
 // Candidatos
 ghr-candidatos-list {
-    .container {
-        border: 2px solid #aaa;
-    }
-    .row {
-        border-top-width: 1px;
-        border-right-width: 1px;
-        border-left-width: 1px;
-        border-bottom-width: 0;
-        border-style: solid;
-        border-color: #aaa;
-        padding: .4em;
-        &:nth-child(odd){
-            background-color: #eeE;
+    .wrap {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 1em;
+        h1 {
+            margin: 1em 0;
         }
-        div {
-
+        .buscador {
+            display: flex;
+            justify-content: flex-end;
+            input {
+                width: 400px;
+            }
         }
-    }
-    .cabecera {
-        font-weight: bold;
-        text-transform: uppercase;
-        border-bottom-width: 2px;
+        .container {
+            border: 2px solid #aaa;
+            .row {
+                display: flex;
+                align-items: center;
+                padding: .4em;
+                border-width: 1px 1px 0 1px;
+                border-style: solid;
+                border-color: #aaa;
+                &:nth-child(odd){
+                    background-color: #eeE;
+                }
+                > div {
+                    display: flex;
+                    justify-content: center;
+                    border-right: 1px solid #aaa;
+                    &:nth-child(6){
+                        border-right: 0;
+                    }
+                }
+            }
+            .cabecera {
+                font-weight: bold;
+                text-transform: uppercase;
+                border-bottom-width: 2px;
+            }
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            li a {
+                padding: .5em 1.2em;
+                font-size: 1.2em;
+            }
+        }
     }
 }
 //Solicitudes
