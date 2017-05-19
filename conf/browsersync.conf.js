@@ -11,6 +11,7 @@ module.exports = function () {
         '/bower_components': 'bower_components'
       }
     },
-    open: false
+    open: true,
+    online: false
   };
 };
