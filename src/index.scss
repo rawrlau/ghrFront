@@ -144,53 +144,31 @@ header .header-title {
         }
     }
 }
-// Candidatos
-ghr-candidatos-list {
-    .wrap {
-        max-width: 1170px;
-        margin: 0 auto;
-        padding: 0 1em;
-        .title-list {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2em 0;
-            .buscador {
-                display: flex;
-                justify-content: flex-end;
-                margin: 0;
-                input {
-                    width: 400px;
-                }
+// Entidades
+.container-fluid {
+    table {
+        margin: 2em 0;
+        th {
+            text-transform: capitalize;
+            cursor: pointer;
+            transition: all .2s;
+            &:hover {
+                color: $softtek-primary;
+                background-color: #eee;
             }
-        }
-        table {
-            margin: 2em 0;
-            th {
-                text-transform: capitalize;
-                cursor: pointer;
-                transition: all .2s;
-                &:hover {
-                    color: $softtek-primary;
-                    background-color: #eee;
-                }
-                &:nth-last-child(1){
-                    cursor: auto;
-                    color: black;
-                    background-color: transparent;
-                }
-            }
-        }
-        .pagination {
-            display: flex;
-            justify-content: center;
-            li a {
-                padding: .5em 1.2em;
-                font-size: 1.2em;
+            &:nth-last-child(1){
+                cursor: auto;
+                color: black;
+                background-color: transparent;
             }
         }
     }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        li a {
+            padding: .5em 1.2em;
+            font-size: 1.2em;
+        }
+    }
 }
-//Solicitudes
-
-//Varios
