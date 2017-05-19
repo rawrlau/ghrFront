@@ -5,7 +5,6 @@ angular
 function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $locationProvider.html5Mode(true).hashPrefix('!');
   $urlRouterProvider.otherwise('/');
-
   $stateProvider
     .state('app', {
       url: '/',
@@ -13,21 +12,21 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     })
     .state('app.candidatos', {
       url: 'candidatos',
-      template: '<ghr-candidatos>Loading..</ghr-candidatos>',
+      template: '<ghr-candidatos-list>Loading..</ghr-candidatos-list>',
       controller: function ($log) {
         $log.log('');
       }
     })
     .state('app.contactos', {
       url: 'contactos',
-      template: '<ghr-contactos>Hola tecnologias</ghr-contactos>',
+      template: '<ghr-tecnologias-list>Hola tecnologias</ghr-tecnologias-list>',
       controller: function ($log) {
         $log.log('');
       }
     })
     .state('app.solicitudes', {
       url: 'solicitudes',
-      template: '<component-solicitudes>Loading..</component-solicitudes>',
+      template: '<ghr-solicitudes-list>Loading..</ghr-solicitudes-list>',
       controller: function ($log) {
         $log.log('');
       }

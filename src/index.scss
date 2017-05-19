@@ -1,3 +1,6 @@
+$softtek-primary: #6CAA20;
+$softtek-secondary: #002E55;
+
 html, body, #root {
   margin: 0;
   height: 100%;
@@ -50,11 +53,11 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  background-color: #cf4646;
+  background-color: $softtek-primary;
   color: white;
 }
 .title-h1 {
-  font-weight: 300;
+  font-weight: bold;
   font-size: 4rem;
   margin: 1rem;
 }
@@ -110,8 +113,62 @@ a {
   font-size: 1.5rem;
   margin: 0 0 2rem 0;
 }
-// Candidatos
-
-//Solicitudes
-
-//Varios
+//General
+header .header-title {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        a {
+            color: #ddd;
+            display: block;
+            padding: 1em;
+            font-size: 1.2em;
+            font-family: 'courier';
+            text-decoration: none;
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            transition: all .2s;
+            &:hover {
+                color: lighten($softtek-primary, 20);
+                border-bottom-color: lighten($softtek-primary, 20);
+            }
+            &.toolbar-active {
+                color: $softtek-primary;
+                border-bottom-color: $softtek-primary;
+            }
+        }
+    }
+}
+// Entidades
+.container-fluid {
+    table {
+        margin: 2em 0;
+        th {
+            text-transform: capitalize;
+            cursor: pointer;
+            transition: all .2s;
+            &:hover {
+                color: $softtek-primary;
+                background-color: #eee;
+            }
+            &:nth-last-child(1){
+                cursor: auto;
+                color: black;
+                background-color: transparent;
+            }
+        }
+    }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        li a {
+            padding: .5em 1.2em;
+            font-size: 1.2em;
+        }
+    }
+}
