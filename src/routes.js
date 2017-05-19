@@ -19,14 +19,14 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     })
     .state('app.contactos', {
       url: 'contactos',
-      template: '<ghr-contactos>Hola tecnologias</ghr-contactos>',
+      template: '<ghr-tecnologias-list>Hola tecnologias</ghr-tecnologias-list>',
       controller: function ($log) {
         $log.log('');
       }
     })
     .state('app.solicitudes', {
       url: 'solicitudes',
-      template: '<component-solicitudes>Loading..</component-solicitudes>',
+      template: '<ghr-solicitudes-list>Loading..</ghr-solicitudes-list>',
       controller: function ($log) {
         $log.log('');
       }
