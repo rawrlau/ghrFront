@@ -26,7 +26,7 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     })
     .state('app.solicitudes', {
       url: 'solicitudes',
-      template: '<component-solicitudes>Loading..</component-solicitudes>',
+      template: '<ghr-solicitudes-list>Loading..</ghr-solicitudes-list>',
       controller: function ($log) {
         $log.log('');
       }
