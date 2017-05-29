@@ -17,6 +17,13 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
         $log.log('');
       }
     })
+    .state('app.candidatos-perfil', {
+      url: 'candidatos/:id',
+      template: '<ghr-candidatos>Loading..</ghr-candidatos>',
+      controller: function ($log, $stateParams) {
+        $log.log('');
+      }
+    })
     .state('app.contactos', {
       url: 'contactos',
       template: '<ghr-tecnologias-list>Hola tecnologias</ghr-tecnologias-list>',
