@@ -6,5 +6,6 @@ angular
     'ghr.candidatos',
     'ghr.solicitudes',
     'ghr.varios',
+    'ghr.contactos',
     'ghr.footer'
   ]);

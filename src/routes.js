@@ -19,6 +19,9 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     })
     .state('app.candidatos-perfil', {
       url: 'candidatos/:id',
+      params: {
+        mode: 'read'
+      },
       template: '<ghr-candidatos>Loading..</ghr-candidatos>',
       controller: function ($log, $stateParams) {
         $log.log('');
@@ -31,9 +34,35 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
         $log.log('');
       }
     })
+    .state('app.tecnologiasDetalle', {
+      url: 'tecnologias/:id/',
+      controller: function ($stateParams) {},
+      template: '<ghr-tecnologias>Loading..</ghr-tecnologias>'
+    })
     .state('app.solicitudes', {
       url: 'solicitudes',
       template: '<ghr-solicitudes-list>Loading..</ghr-solicitudes-list>',
+      params: {
+        mode: 'view'
+      },
+      controller: function ($log) {
+        $log.log('');
+      }
+    })
+    .state('app.solicitudesForm', {
+      url: 'solicitudes/:id',
+      template: '<ghr-solicitudes-form>Loading..</ghr-solicitudes-form>',
+      params: {
+        mode: 'view'
+      },
+      controller: function ($log, $stateParams) {
+        $log.log($stateParams.id);
+        angular.isDefined($stateParams.id);
+      }
+    })
+    .state('app.contactos', {
+      url: 'contacto',
+      template: '<ghr-contactos-list>Hola contactos</ghr-contactos-list>',
       controller: function ($log) {
         $log.log('');
       }
