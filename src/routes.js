@@ -24,8 +24,8 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
         $log.log('');
       }
     })
-    .state('app.contactos', {
-      url: 'contactos',
+    .state('app.tecnologias', {
+      url: 'tecnologias',
       template: '<ghr-tecnologias-list>Hola tecnologias</ghr-tecnologias-list>',
       controller: function ($log) {
         $log.log('');
