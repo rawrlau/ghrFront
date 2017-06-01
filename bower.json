@@ -7,6 +7,8 @@
     "component-footer": "https://github.com/SofttekFormacion2017/component-footer.git#1.0.0",
     "component-candidatos": "https://github.com/SofttekFormacion2017/component-candidatos.git#develop",
     "component-solicitudes": "https://github.com/SofttekFormacion2017/component-solicitudes.git#develop",
+    "component-caracteristicas": "https://github.com/SofttekFormacion2017/component-caracteristicas.git#develop",
+    "component-requisitos": "https://github.com/SofttekFormacion2017/component-requisitos.git#develop",
     "component-varios": "https://github.com/SofttekFormacion2017/component-varios.git#master",
     "angular-bootstrap": "^2.5.0",
     "bootstrap": "3",

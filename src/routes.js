@@ -27,20 +27,20 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
         $log.log('');
       }
     })
-    .state('app.tecnologias', {
-      url: 'tecnologias',
-      template: '<ghr-tecnologias-list>Hola tecnologias</ghr-tecnologias-list>',
+    .state('app.caracteristicas', {
+      url: 'caracteristicas',
+      template: '<ghr-caracteristicas-list>Loading..</ghr-caracteristicas-list>',
       controller: function ($log) {
         $log.log('');
       }
     })
-    .state('app.tecnologiasDetalle', {
-      url: 'tecnologias/:id/',
+    .state('app.caracteristicasDetalle', {
+      url: 'caracteristicas/:id/',
       params: {
         mode: 'view'
       },
       controller: function ($stateParams) {},
-      template: '<ghr-tecnologias>Loading..</ghr-tecnologias>'
+      template: '<ghr-caracteristicas>Loading..</ghr-caracteristicas>'
     })
     .state('app.solicitudes', {
       url: 'solicitudes',
