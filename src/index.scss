@@ -172,3 +172,26 @@ header .header-title {
         }
     }
 }
+span.form-control {
+    border: none;
+    border-left: 3px solid $softtek-primary;
+    background-color: lighten($softtek-primary, 55);
+    border-radius: 0;
+    box-shadow: none;
+    font-style: italic;
+}
+.oculto {
+    visibility: hidden;
+}
+.glyphicon-asterisk {
+    font-size: .75em;
+    color: #555;
+    top: -3px;
+}
+.marginless-bottom {
+    margin-bottom: 0;
+}
+.leyenda {
+    color: #888;
+    font-style: italic;
+}
