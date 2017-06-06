@@ -5,11 +5,17 @@
     "angular": "^1.6.2",
     "angular-ui-router": "1.0.0-beta.3",
     "component-footer": "https://github.com/SofttekFormacion2017/component-footer.git#1.0.0",
-    "component-candidatos": "https://github.com/SofttekFormacion2017/component-candidatos.git",
-    "component-solicitudes": "https://github.com/SofttekFormacion2017/component-solicitudes.git",
-    "component-varios": "https://github.com/SofttekFormacion2017/component-varios.git",
+    "component-candidatos": "https://github.com/SofttekFormacion2017/component-candidatos.git#develop",
+    "component-solicitudes": "https://github.com/SofttekFormacion2017/component-solicitudes.git#develop",
+    "component-caracteristicas": "https://github.com/SofttekFormacion2017/component-caracteristicas.git#develop",
+    "component-requisitos": "https://github.com/SofttekFormacion2017/component-requisitos.git#develop",
+    "component-varios": "https://github.com/SofttekFormacion2017/component-varios.git#master",
     "angular-bootstrap": "^2.5.0",
-    "bootstrap": "3"
+    "bootstrap": "3",
+    "angular-toastr": "^2.1.1",
+    "angular-animate": "^1.6.4",
+    "component-contactos": "https://github.com/SofttekFormacion2017/component-contactos.git#master",
+    "components-font-awesome": "^4.7.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.6.2"
