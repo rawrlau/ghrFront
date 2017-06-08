@@ -4,12 +4,20 @@ angular
 
 function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $locationProvider.html5Mode(true).hashPrefix('!');
+  // indico al pantalla por defecto al iniciar
   $urlRouterProvider.when('/', '/dashboard');
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/dashboard');
   $stateProvider
     .state('app', {
       url: '/',
       component: 'app'
+    })
+    .state('app.solicitudesDashboard', {
+      url: 'dashboard',
+      template: '<ghr-solicitudes-dashboard>Loading..</ghr-solicitudes-dashboard>',
+      controller: function ($log) {
+        $log.log('');
+      }
     })
     .state('app.candidatos', {
       url: 'candidatos',
