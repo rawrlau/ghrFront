@@ -5,6 +5,8 @@ angular
 function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $locationProvider.html5Mode(true).hashPrefix('!');
   $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.when('/', '/dashboard');
+
   $stateProvider
     .state('app', {
       url: '/',
@@ -61,6 +63,16 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
       controller: function ($log, $stateParams) {
         $log.log($stateParams.id);
         angular.isDefined($stateParams.id);
+      }
+    })
+    .state('app.solicitudesDashboard', {
+      url: 'dashboard',
+      template: [
+        '<fountain-title></fountain-title>',
+        '<ghr-solicitudes-dashboard>Loading..</ghr-solicitudes-dashboard>'
+      ],
+      controller: function ($log) {
+        $log.log('');
       }
     });
 }
