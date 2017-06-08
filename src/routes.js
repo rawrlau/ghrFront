@@ -14,7 +14,10 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     })
     .state('app.solicitudesDashboard', {
       url: 'dashboard',
-      template: '<ghr-solicitudes-dashboard>Loading..</ghr-solicitudes-dashboard>',
+      template: [
+        '<fountain-title></fountain-title>',
+        '<ghr-solicitudes-dashboard>Loading..</ghr-solicitudes-dashboard>'
+      ],
       controller: function ($log) {
         $log.log('');
       }
