@@ -87,12 +87,25 @@ fountain-header {
   white: white;
 }
 .title {
+}
+
+.titlePermanente {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
   background-color: $softtek-primary;
   color: white;
+}
+
+.titleOcultar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: $softtek-primary;
+  color: white;
+  z-index: -1;
 }
 
 .title-h1 {
@@ -113,6 +126,25 @@ fountain-header {
   font-size: 2rem;
   margin: 0.5rem;
 }
+
+//////////////////////animacion del titulo inicio//////////////////////
+.animacion-titulo.ng-hide {
+  top: -174px;
+  color: $softtek-primary;
+}
+
+.animacion-titulo.ng-hide-add,
+.animacion-titulo.ng-hide-remove
+ {
+   z-index: -1px;
+  transition: all cubic-bezier(0.4, 0.0, 0.2, 1) 0.35s;
+}
+
+.elemento-ocultar {
+  position: relative;
+  top: 0px;
+}
+//////////////////////animacion del titulo fin//////////////////////
 
 .footer {
   padding: 0.5rem;
@@ -327,6 +359,38 @@ span.form-control {
 
 //Css DragAndDrop
 .draganddropSolicitudes {
+  .tituloSolicitudAbierta{
+    background-color: hsla(99, 100%, 70%, 0.33);
+    padding:10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -13px;
+    margin-bottom: -15px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  .tituloSolicitudEspera{
+    background-color: hsla(213, 100%, 70%, 0.33);
+    padding:10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -13px;
+    margin-bottom: -15px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  .tituloSolicitudCerrada{
+    background-color: hsla(0, 100%, 70%, 0.33);
+    padding:10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -13px;
+    margin-bottom: -15px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
   .topRow{
       margin-bottom : 30px;
   }
