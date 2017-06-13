@@ -14,9 +14,10 @@
     "bootstrap": "3",
     "angular-toastr": "^2.1.1",
     "angular-animate": "^1.6.4",
-    "component-contactos": "https://github.com/SofttekFormacion2017/component-contactos.git#master",
+    "component-contactos": "https://github.com/SofttekFormacion2017/component-contactos.git#develop",
     "components-font-awesome": "^4.7.0",
     "angular-native-dragdrop": "^1.2.2",
+    "open-sans-fontface": "^1.4.2",
     "ngstorage": "^0.3.11"
   },
   "devDependencies": {
