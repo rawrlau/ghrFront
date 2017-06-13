@@ -251,6 +251,10 @@ header {
   table {
     margin: 2em 0;
 
+    td {
+        vertical-align: middle !important;
+    }
+
     th {
       text-transform: capitalize;
       cursor: pointer;
