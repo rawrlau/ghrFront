@@ -10,7 +10,9 @@ html, body, #root {
 body, h1, h2, h3 {
   font-weight: 300
 }
-
+.h1{
+  margin-top: 80px;
+}
 a {
   color: white;
   text-decoration: none;
@@ -22,7 +24,6 @@ a {
 .glyphicon-align-justify {
   float: right;
 }
-
 .tituloSolicitudAbierta{
   background-color:#cfefa9;
   padding:10px;
@@ -68,10 +69,14 @@ a {
 }
 
 .header {
+  z-index: 5;
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   background-color: #1f1f1f;
 }
+
 .header-title {
   flex: 1;
   font-size: 1.5rem;
@@ -88,6 +93,7 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  margin-top: 60px;
   background-color: $softtek-primary;
   color: white;
 }
