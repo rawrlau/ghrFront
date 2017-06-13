@@ -12,6 +12,16 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
       url: '/',
       component: 'app'
     })
+    .state('app.solicitudesDashboard', {
+      url: 'dashboard',
+      template: [
+        '<fountain-title></fountain-title>',
+        '<ghr-solicitudes-dashboard>Loading..</ghr-solicitudes-dashboard>'
+      ],
+      controller: function ($log) {
+        $log.log('');
+      }
+    })
     .state('app.candidatos', {
       url: 'candidatos',
       template: '<ghr-candidatos-list>Loading..</ghr-candidatos-list>',
