@@ -15,9 +15,7 @@ h2,
 h3 {
   font-weight: 300;
 }
-.h1{
-  margin-top: 80px;
-}
+
 a {
   color: white;
   text-decoration: none;
@@ -73,15 +71,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-//Menu fijo
-.header {
-  z-index: 5;
-  position: fixed;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #1f1f1f;
-}
 
 .header-title {
   flex: 1;
@@ -100,7 +89,6 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  margin-top: 60px;
   background-color: $softtek-primary;
   color: white;
 }
@@ -168,22 +156,7 @@ a {
   font-size: 1.5rem;
   margin: 0 0 2rem;
 }
-/* Put your css in here */
 
-.topRow{
-    margin-bottom : 30px;
-}
-
-.on-drag-enter{
-    background-color : #F8EECB;
-}
-.on-drag-hover:before {
-  content: '';
-  display: block;
-  color: white;
-  font-size: x-large;
-  font-weight: 800;
-}
 //General
 
 header .header-title {
@@ -223,6 +196,7 @@ header .header-title {
 // Entidades
 
 .container-fluid {
+
   table {
     margin: 2em 0;
 
@@ -327,4 +301,33 @@ span.form-control {
 
 #contendorListas li {
   list-style: none;
+}
+
+//Css DragAndDrop
+.draganddropSolicitudes {
+  .topRow{
+      margin-bottom : 30px;
+  }
+  .on-drag-enter{
+      background-color : #F8EECB;
+  }
+  .on-drag-hover:before {
+    display: block;
+    color: white;
+    font-size: x-large;
+    font-weight: 800;
+  }
+}
+
+//Menu fijo
+.header {
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #1f1f1f;
+}
+.ng-isolate-scope{
+  margin-bottom: 55px;
 }
