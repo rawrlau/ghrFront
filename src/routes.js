@@ -4,9 +4,9 @@ angular
 
 function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $locationProvider.html5Mode(true).hashPrefix('!');
-  // indico al pantalla por defecto al iniciar
+  $urlRouterProvider.otherwise('/');
   $urlRouterProvider.when('/', '/dashboard');
-  $urlRouterProvider.otherwise('/dashboard');
+
   $stateProvider
     .state('app', {
       url: '/',

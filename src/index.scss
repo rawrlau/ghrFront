@@ -26,6 +26,41 @@ fountain-header {
     }
   }
 }
+.glyphicon-align-justify {
+  float: right;
+}
+.tituloSolicitudAbierta{
+  background-color:#cfefa9;
+  padding:10px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -13px;
+  margin-bottom: -15px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.tituloSolicitudEspera{
+  background-color:#ccccff;
+  padding:10px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -13px;
+  margin-bottom: -15px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.tituloSolicitudCerrada{
+  background-color:#ff9999;
+  padding:10px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -13px;
+  margin-bottom: -15px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
 
 .main-container {
   display: flex;
@@ -37,12 +72,6 @@ fountain-header {
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  background-color: #1f1f1f;
 }
 
 .header-title {
@@ -57,14 +86,26 @@ fountain-header {
   margin: 1rem;
   white: white;
 }
-
 .title {
+}
+
+.titlePermanente {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
   background-color: $softtek-primary;
   color: white;
+}
+
+.titleOcultar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: $softtek-primary;
+  color: white;
+  z-index: -1;
 }
 
 .title-h1 {
@@ -85,6 +126,25 @@ fountain-header {
   font-size: 2rem;
   margin: 0.5rem;
 }
+
+//////////////////////animacion del titulo inicio//////////////////////
+.animacion-titulo.ng-hide {
+  top: -174px;
+  color: $softtek-primary;
+}
+
+.animacion-titulo.ng-hide-add,
+.animacion-titulo.ng-hide-remove
+ {
+   z-index: -1px;
+  transition: all cubic-bezier(0.4, 0.0, 0.2, 1) 0.35s;
+}
+
+.elemento-ocultar {
+  position: relative;
+  top: 0px;
+}
+//////////////////////animacion del titulo fin//////////////////////
 
 .footer {
   padding: 0.5rem;
@@ -130,6 +190,7 @@ fountain-header {
   font-size: 1.5rem;
   margin: 0 0 2rem;
 }
+
 //General
 
 header {
@@ -173,7 +234,7 @@ header {
         }
 
         &:hover {
-          color: white;
+          color: lighten($softtek-primary,20);
         }
 
         &.toolbar-active {
@@ -186,6 +247,7 @@ header {
 // Entidades
 
 .container-fluid {
+
   table {
     margin: 2em 0;
 
@@ -298,6 +360,68 @@ span.form-control {
 #contendorListas li {
   list-style: none;
 }
+
+//Css DragAndDrop
+.draganddropSolicitudes {
+  .tituloSolicitudAbierta{
+    background-color: hsla(99, 100%, 70%, 0.33);
+    padding:10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -13px;
+    margin-bottom: -15px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  .tituloSolicitudEspera{
+    background-color: hsla(213, 100%, 70%, 0.33);
+    padding:10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -13px;
+    margin-bottom: -15px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  .tituloSolicitudCerrada{
+    background-color: hsla(0, 100%, 70%, 0.33);
+    padding:10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -13px;
+    margin-bottom: -15px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .topRow{
+      margin-bottom : 30px;
+  }
+  .on-drag-enter{
+      background-color : #F8EECB;
+  }
+  .on-drag-hover:before {
+    display: block;
+    color: white;
+    font-size: x-large;
+    font-weight: 800;
+  }
+}
+
+//Menu fijo
+.header {
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #1f1f1f;
+}
+fountain-header {
+  margin-bottom: 55px;
+}
+
 .turn:hover {
 	-webkit-transition: all 700ms cubic-bezier(0.680,0,0.265,1);
 	-webkit-transition: all 700ms cubic-bezier(0.680,-0.550,0.265,1.550);
