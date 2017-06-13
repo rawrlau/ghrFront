@@ -19,6 +19,42 @@ a {
     color: #5aadbb;
   }
 }
+.glyphicon-align-justify {
+  float: right;
+}
+
+.tituloSolicitudAbierta{
+  background-color:#cfefa9;
+  padding:10px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -13px;
+  margin-bottom: -15px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.tituloSolicitudEspera{
+  background-color:#ccccff;
+  padding:10px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -13px;
+  margin-bottom: -15px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.tituloSolicitudCerrada{
+  background-color:#ff9999;
+  padding:10px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -13px;
+  margin-bottom: -15px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
 
 .main-container {
   display: flex;
@@ -47,7 +83,6 @@ a {
   margin: 1rem;
   white: white;
 }
-
 .title {
   display: flex;
   flex-direction: column;
@@ -119,13 +154,11 @@ a {
     margin-bottom : 30px;
 }
 
-
 .on-drag-enter{
-    background-color : #aaaaaa;
+    background-color : #F8EECB;
 }
-
 .on-drag-hover:before {
-  content: 'Drop him gently';
+  content: '';
   display: block;
   color: white;
   font-size: x-large;
