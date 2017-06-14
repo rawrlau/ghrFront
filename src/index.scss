@@ -112,6 +112,7 @@ fountain-header {
   font-weight: bold;
   font-size: 4rem;
   margin: 1rem;
+  padding-top: 10px;
 }
 
 .title-logo {
@@ -395,11 +396,11 @@ span.form-control {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
   }
+  .drag-and-drop:hover {
+      cursor: grab;
+  }
   .topRow{
       margin-bottom : 30px;
-  }
-  .on-drag-enter{
-      background-color : #F8EECB;
   }
   .on-drag-hover:before {
     display: block;
